@@ -11,12 +11,12 @@ class MobilController extends Controller
     function index()
     {
         $dataMobil = session()->get('dataMobilNew');
-        return view('mobil.index', compact('dataMobil'));
+        return view('mobil/index', compact('dataMobil'));
     }
 
     function create()
     {
-        return view('mobil.form');
+        return view('mobil/form');
     }
 
     function store(Request $request)
